@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kontroller</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="controller">
+        <div class="controller__container">
+            <div class="controller__wrapper">
+                <div class="controller__content">
+                    <span class="controller__icon icon-stairs"></span>
+                  <div class="controller__block">
+                      <button class="controller__button controller__button--red" data-text='Tänd lampor'>
+                          on
+                      </button>
+                      <button class="controller__button controller__button--position" data-text='Släck lampor'>
+                          off
+                      </button>
+                  </div>
+                    <div class="controller__block">
+                        <button class="controller__button" data-text='Öka Ljusstyrka'>
+                            <span class="controller__icon icon-sun"></span>
+                        </button>
+
+                        <button class="controller__button controller__button--position" data-text='Sänk ljusstyrka'>
+                            <span class="controller__icon icon-sun-down" ></span>
+                        </button>
+                    </div>
+                    <div class="controller__block" >
+                        <button class="controller__button" data-text='Byt ljusfärg'>
+                            <span class="controller__icon icon-recycle" ></span>
+                        </button>
+                        <button class="controller__button controller__button--position" data-text='Stäng av en lampa i taget'>
+                            <span class="controller__icon icon-lamps" ></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="controller__content controller__content--border">
+                    <p class="controller__timer">Timer</p>
+                    <div class="controller__block">
+                        <button class="controller__button" data-text='Sätt timer 4t'>4h
+                        </button>
+                        <button class="controller__button controller__button--position" data-text='Sätt timer 8t'>
+                            8h
+                        </button>
+                    </div>
+                    <div class="controller__block">
+                        <button class="controller__button" data-text='Sätt timer 12t'>
+                            12h
+                        </button>
+                        <button class="controller__button controller__button--position" data-text='Ta bort timer'>
+                            c
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

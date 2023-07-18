@@ -1,0 +1,144 @@
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-stairs:before {
+  content: "\e904";
+}
+
+.icon-lamps:before {
+  content: "\e900";
+}
+
+.icon-recycle:before {
+  content: "\e901";
+}
+
+.icon-sun:before {
+  content: "\e902";
+}
+
+.icon-sun-down:before {
+  content: "\e903";
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.controller {
+  width: 100%;
+  min-height: 400px;
+}
+.controller__container {
+  max-width: 250px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.controller__wrapper {
+  padding: 20px 10px 80px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border-radius: 20px;
+  border: 3px solid black;
+  background-color: #f6f3f3;
+}
+.controller__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+  padding: 0 5px;
+  position: relative;
+}
+.controller__content--border {
+  padding: 10px 4px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.controller__timer {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 26px);
+}
+.controller__block {
+  display: flex;
+  justify-content: space-between;
+}
+.controller__button {
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 10px 10px;
+  max-width: 60px;
+  width: 100%;
+  min-height: 60px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.controller__button:hover {
+  background-color: lightgray;
+}
+.controller__button--red {
+  background-color: red;
+}
+.controller__button--red:hover {
+  background-color: #a21b1b;
+}
+.controller__button:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -80px;
+  top: -20px;
+  z-index: 3;
+  font-size: 22px;
+  padding: 5px;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  background-color: white;
+  border: 1px solid black;
+  transition: opacity 0.5s ease;
+}
+.controller__button--position:before {
+  left: unset;
+  right: -90px;
+}
+.controller__button--active:before {
+  opacity: 1;
+  visibility: visible;
+}
+.controller__icon {
+  display: block;
+  font-size: 25px;
+  position: absolute;
+  left: calc(50% - 12.5px);
+  top: calc(50% - 12.5px);
+}
+.controller .icon-stairs {
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(50% - 12.5px);
+}
+
+/*# sourceMappingURL=style.css.map */
